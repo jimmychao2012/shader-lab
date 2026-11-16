@@ -1,0 +1,8 @@
+[
+  {"id":"computer-graphics","title":"Computer Graphics","category":"基礎概念","level":"入門","summary":"電腦如何將數學、幾何與色彩變成畫面？","details":"電腦圖學研究如何以電腦產生與處理視覺影像。遊戲中常見的 3D 場景，通常經過模型建立、座標轉換、投影、光柵化與著色等步驟，最後顯示在螢幕上。"},
+  {"id":"shader","title":"Shader 著色器","category":"Shader","level":"入門","summary":"控制畫面中頂點與像素如何被處理的 GPU 程式。","details":"Shader 是在圖形處理流程中執行的程式。不同階段的 Shader 有不同任務，例如 Vertex Shader 負責處理頂點位置，Fragment Shader 常用來計算片段顏色。材質、光照與特效都可能使用 Shader。"},
+  {"id":"vertex-shader","title":"Vertex Shader","category":"Shader","level":"入門","summary":"把模型頂點轉換到適合顯示的座標空間。","details":"Vertex Shader 對每個輸入頂點執行運算，常見工作是將模型座標經由模型、視圖與投影矩陣轉換為裁剪空間座標，也能傳遞法線或紋理座標等資料供後續階段使用。"},
+  {"id":"fragment-shader","title":"Fragment Shader","category":"Shader","level":"入門","summary":"決定片段的顏色，常用於材質與光照效果。","details":"在光柵化之後，Fragment Shader 會處理產生的片段，計算顏色或其他輸出。它可以結合紋理、光源與材質參數製作各種視覺效果；片段不一定都會成為最終螢幕像素。"},
+  {"id":"rasterization","title":"Rasterization 光柵化","category":"渲染技術","level":"入門","summary":"把幾何圖形轉換成螢幕上的片段。","details":"光柵化會判斷投影後的三角形覆蓋哪些螢幕位置，並產生待處理的片段。它是即時圖形中常用的技術，搭配深度測試與著色器，可以有效率地繪製複雜場景。"},
+  {"id":"ray-tracing","title":"Ray Tracing 光線追蹤","category":"渲染技術","level":"進階","summary":"模擬光線與場景交互作用的渲染方法。","details":"光線追蹤透過追蹤光線與物體的交點，計算可見性、陰影、反射等效果。它能呈現具有物理意義的光照現象，但計算成本通常較高，因此即時應用常採用加速結構與混合渲染策略。"}
+]
